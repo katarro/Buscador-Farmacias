@@ -4,7 +4,7 @@ function Navbar(){
     return(
         <React.Fragment>
             <div className="Navbar">
-                <h3>App Pharmacy Finder</h3>
+                <h3>Busca tu Farmacia</h3>
             </div>
         </React.Fragment>
     )

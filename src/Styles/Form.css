@@ -1,49 +1,78 @@
-.img-2{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.cards{
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px black;
-    justify-content: center;
-    text-align: center;
-    padding: 0px 15px 10px 15px;
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #232830;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --gren-strong: #57ce65;
+  --gradient: linear-gradient(to bottom, #57ce65, #96c93d);
 }
 
-.container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 15px;
+.containerr {
+  width: 100%;
+/*   background-color: var(--hospital-green); */
+  background: var(--gradient);
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
 }
-@media(max-width: 790px){
-    .container{
-        grid-template-columns: 35% 35% 35%;
-    }
+.nombre {
+  color: var(--gren-strong);
 }
-@media(max-width: 575px){
-    .container{
-        grid-template-columns:  auto auto;
-    }
+
+.container-text {
+  display: grid;
+  place-items: center;
+  font-family: "Quicksand", sans-serif;
+  color: var(--very-light-pink);
+  font-weight: 500;
+  font-size: var(--md);
 }
-@media(max-width: 430px){
-    .container{
-        grid-template-columns:   auto;
-    }
+.container-form {
+  margin-top: 80px;
+  border: var(--very-light-pink);
+  /* width: 100%; */
 }
-.input{
-    margin: 0 auto;
-    width: 70%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+.loader {
+  display: grid;
+  place-items: center;
+  border: solid black 3px;
 }
-.button{
-    padding-top: 5vh;
-    padding-bottom: 10px;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
+
+.container-cards {
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+  grid-template-columns: auto;
+}
+.cards {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  place-items: center;
+  border: solid black 1px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 5px 10px 8px;
+  background-color: var(--white);
+}
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .container-cards {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container-cards {
+    grid-template-columns: auto auto auto;
+  }
 }

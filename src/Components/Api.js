@@ -3,5 +3,7 @@ export const getPharmacys = async (url) =>{
         const promise = await fetch(url)
         const data = await promise.json()
         return data
-    } catch (error) {}
+    } catch (error) {
+        console.error(error.message)
+    }
 }

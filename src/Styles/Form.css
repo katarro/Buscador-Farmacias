@@ -11,7 +11,6 @@
 
 .containerr {
   width: 100%;
-/*   background-color: var(--hospital-green); */
   background: var(--gradient);
   background-attachment: fixed;
   display: grid;
@@ -32,12 +31,12 @@
 .container-form {
   margin-top: 80px;
   border: var(--very-light-pink);
-  /* width: 100%; */
 }
 .loader {
   display: grid;
   place-items: center;
-  border: solid black 3px;
+  height: 100vh;
+  width: 100%;
 }
 
 .container-cards {
